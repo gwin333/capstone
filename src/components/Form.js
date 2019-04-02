@@ -18,8 +18,25 @@ class Form extends Component {
 
     handleSubmit(event) {
         event.preventDefault()
-        var selectedDate = this.props.value.toString()
+        var selectedDate = this.props.value
         localStorage.setItem(selectedDate, JSON.stringify(this.state))
+    }
+
+    componentWillReceiveProps(nextProps) {
+        console.log(this.props, nextProps)
+        let nextState = JSON.parse(localStorage.getItem(nextProps.value))
+        if (!nextState) {
+            nextState = {
+                notes: '',
+                exercisedThisDay: ''
+            }
+        }
+
+        this.setState(nextState)
+
+        //get the item from localStorage for that date or for nextProps.value
+        //do some if this that stuff. and if does exist JSON.parse stuff. and do this.setState on 
+        //what gets parsed
     }
 
     render() {
@@ -27,7 +44,7 @@ class Form extends Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
-                        Date: {this.props.value.toString()}<br />
+                        Date: {this.props.value}<br />
                     </div>
                     <div className="form-group">
                         Notes:<br />

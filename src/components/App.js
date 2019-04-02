@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import '../styles/App.css';
 import Navbar from './Navbar';
 import Calendar from 'react-calendar';
-import Form from './Form'
+import Form from './Form';
+import { format } from 'date-fns';
+
+const dateString = format(new Date(), 'yyyy-MM-dd')
+console.log(dateString)
 
 class App extends Component {
   constructor() {
@@ -29,7 +33,7 @@ class App extends Component {
           </div>
           <div className="col">
             <Form
-              value={this.state.selectedDay}
+              value={format(this.state.selectedDay, 'yyyy-MM-dd')}
             />
           </div>
         </div>
