@@ -8,6 +8,7 @@ class Form extends Component {
             notes: ""
         }
         this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     handleChange(event) {
@@ -17,6 +18,8 @@ class Form extends Component {
 
     handleSubmit(event) {
         event.preventDefault()
+        var selectedDate = this.props.value.toString()
+        localStorage.setItem(selectedDate, JSON.stringify(this.state))
     }
 
     render() {
@@ -56,7 +59,11 @@ class Form extends Component {
                             /> No, I did not
                 </label>
                     </div>
-                    <input type="submit" value="Submit" className="btn btn-danger" />
+                    <input
+                        type="submit"
+                        value="Submit"
+                        className="btn btn-danger"
+                    />
                 </form>
             </div>
         );
