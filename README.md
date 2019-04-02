@@ -1,69 +1,74 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# DigitalCrafts Sept '18 Cohort Capstone Project Requirements
 
-In the project directory, you can run:
+This is the final project for the Flex course for [DigitalCrafts] Houston.
 
-### `npm start`
+> NOTE: This project was completed in accordance with the requirements laid out to fulfill Texas state requirements for credit for the course.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[DigitalCrafts]:https://www.digitalcrafts.com/
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Project Description
 
-### `npm test`
+This is an exercise tracking app.  It lets the user simply mark off which days they did exercise.  Every month, the user can set a goal of how many days they want to exercise.  At the same time, the user can set up rewards for if their exercise goals are met for the month - a little incentive!
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technical Requirements
 
-### `npm run build`
+<!-- Requirements of the project and how our project satisfies them -->
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Must be a full stack application.
+  - Must contain code that runs on the server (Node.js)
+  - And the browser (client-side JavaScript)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- Use a database to store and retrieve data.
+  - Database for this project: MongoDB
+  - Database does not have to be hosted locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Deployed somewhere publicly accessible:
+  - [Heroku](https://www.heroku.com/nodejs)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- HTML defined in some sort of composable structure.
+  - Example: React.js components
+  - "render functions" that return HTML strings
+  - Mustache templates
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Use at least one AJAX request to communicate to a back end API endpoint.
+  - Or try out [WebSockets](https://socket.io/) for real-time communication
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Visual design of your application should be cohesive.
+  - All custom CSS and design work
+  - Or a CSS framework like Bootstrap or Bulma
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Code must be organized using JavaScript modules.
+  - No super long files
+  - No "spaghetti code"
 
-## Learn More
+- JavaScript libraries:
+  - [jQuery.js](https://jquery.com/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- CSS framework:
+  - [Bootstrap](http://getbootstrap.com/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Remote APIs:
+  - [Firebase](https://firebase.google.com/)
+  - [Google Maps](https://developers.google.com/maps/documentation/)
+  - [Yelp](https://www.yelp.com/developers)
 
-### Code Splitting
+- Deployment on Firebase:
+  - [Firebase](https://firebase.google.com/docs/hosting/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Agile Workflow & Planning Images
 
-### Analyzing the Bundle Size
+- [Trello](https://trello.com/b/WXf2yM1q/home-slice-workflow)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- [PlanningImages](https://github.com/sarahnash/home-slice/wiki)
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Project Objectives
 
-### Advanced Configuration
+The purpose is to showcase what we, as students, have learned throughout the time being at DigitalCrafts Houston.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+#buildersofthings #webuildtheweb
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# capstone
+--------------------------------------------------------------------------------
