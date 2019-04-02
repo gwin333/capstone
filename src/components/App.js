@@ -5,8 +5,7 @@ import Calendar from 'react-calendar';
 import Form from './Form';
 import { format } from 'date-fns';
 
-const dateString = format(new Date(), 'yyyy-MM-dd')
-console.log(dateString)
+
 
 class App extends Component {
   constructor() {
@@ -33,7 +32,7 @@ class App extends Component {
           </div>
           <div className="col">
             <Form
-              value={format(this.state.selectedDay, 'yyyy-MM-dd')}
+              value={format(this.state.selectedDay, 'ddd, MMMM Do, YYYY')}
             />
           </div>
         </div>

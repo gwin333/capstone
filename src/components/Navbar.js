@@ -3,7 +3,7 @@ import React from 'react';
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-danger">
-            <b>EXERCISE TRACKER <i class="fas fa-running"></i></b>
+            <b>EXERCISE TRACKER <i className="fas fa-running"></i></b>
 
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
