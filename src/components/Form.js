@@ -44,10 +44,10 @@ class Form extends Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
-                        Date: {this.props.value}<br />
+                        <b>Date:</b> {this.props.value}<br />
                     </div>
                     <div className="form-group">
-                        Notes:<br />
+                        <b>Notes:</b><br />
                         <textarea
                             type="text"
                             name="notes"
@@ -56,7 +56,7 @@ class Form extends Component {
                             onChange={this.handleChange}
                         /></div><br />
                     <div className="form-group">
-                        Exercised this day?<br />
+                        <b>Exercised this day?</b><br />
                         <label>
                             <input
                                 type="radio"
